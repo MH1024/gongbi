@@ -19,7 +19,8 @@
     "serve-favicon": "~2.4.5",
     "mongodb":"*",
     "mongoose":"*",
-    "socket.io":"*"
+    "socket.io":"*",
+    "markdown":"*",
   },
   "devDependencies": {
     "mocha": "*",
