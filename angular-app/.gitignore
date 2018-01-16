@@ -7,7 +7,7 @@
 
 # dependencies
 /node_modules
-/vendor
+src/app/vendor
 
 # IDEs and editors
 /.idea
