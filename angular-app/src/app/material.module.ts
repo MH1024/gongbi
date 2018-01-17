@@ -42,6 +42,7 @@ import {CdkTableModule} from '@angular/cdk/table';
 
 @NgModule({
     imports: [
+        BrowserAnimationsModule,
         CdkTableModule,
         MatAutocompleteModule,
         MatButtonModule,
@@ -76,6 +77,7 @@ import {CdkTableModule} from '@angular/cdk/table';
         MatTooltipModule,
       ],
   exports: [
+    BrowserAnimationsModule,
     CdkTableModule,
     MatAutocompleteModule,
     MatButtonModule,
