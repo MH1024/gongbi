@@ -7,14 +7,12 @@ import { Http } from '@angular/http';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-  listData: Object;
+  listData: Array<string>;
   constructor(private http:Http) {
     this.http.get('https://jsonplaceholder.typicode.com/todos')
     .subscribe(res => this.listData = res.json());
-    
    }
-
-
+   
   ngOnInit() {
   }
 
