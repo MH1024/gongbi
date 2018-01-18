@@ -3,7 +3,7 @@
   
     <form class="form-container" >
         <mat-form-field>
-          <input matInput placeholder="Title">
+          <input matInput placeholder="Title" ng-model="titleValue">
         </mat-form-field>
 
         <mat-form-field>
@@ -11,7 +11,7 @@
         </mat-form-field>
 
         <span class="done">
-            <button mat-fab>
+            <button mat-fab (click)="postTask()">
               <mat-icon>check circle</mat-icon>
             </button>
         </span>
