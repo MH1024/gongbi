@@ -9,6 +9,7 @@ import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 
 
@@ -16,7 +17,8 @@ import { MatInputModule } from '@angular/material/input';
   declarations: [
     AppComponent,
     HelloWorldComponent,
-    TodoFormComponent
+    TodoFormComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
