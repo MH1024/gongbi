@@ -20,7 +20,7 @@
     "mongodb":"*",
     "mongoose":"*",
     "socket.io":"*",
-    "markdown":"*",
+    "markdown":"*"
   },
   "devDependencies": {
     "mocha": "*",
