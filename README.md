@@ -1,10 +1,10 @@
 ## Gongbi
 MEAN stack for todo list web app.
 ## Developing environment
--Angular 5.0.0
--Nodejs 6.11.3
--Express 4.15.5
--MongoDB 3.6.1
+- Node.js: `5.0.0`
+- Nodejs `6.11.3`
+- Express `4.15.5`
+- MongoDB `3.6.1`
 ## Description
 use Angular Material as UI.
 study from ng book 5 example https://www.ng-book.com/2/
