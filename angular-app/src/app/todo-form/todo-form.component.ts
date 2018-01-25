@@ -14,12 +14,12 @@ export class TodoFormComponent implements OnInit {
 
   ngOnInit() {
   }
-  postTask(titleValue){
+  postTask(){
     console.log(this.titleValue);
     const req = this.http.post('http://jsonplaceholder.typicode.com/posts', {
      
       
-    title : titleValue,          
+    title : this.titleValue,          
     body: 'bar',
     userId: 1
   })

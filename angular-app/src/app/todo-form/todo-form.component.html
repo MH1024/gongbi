@@ -3,7 +3,7 @@
   
     <form class="form-container" >
         <mat-form-field>
-          <input matInput placeholder="Title" ng-model="titleValue">
+          <input matInput [(ngModel)]="titleValue" placeholder="Title" [ngModelOptions]="{standalone: true}">
         </mat-form-field>
 
         <mat-form-field>
