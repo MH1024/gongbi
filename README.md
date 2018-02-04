@@ -1,7 +1,7 @@
 ## Gongbi
 MEAN stack for todo list web app.
 ## Developing environment
-- Node.js: `5.0.0`
+- Angular `5.0.0`
 - Nodejs `6.11.3`
 - Express `4.15.5`
 - MongoDB `3.6.1`

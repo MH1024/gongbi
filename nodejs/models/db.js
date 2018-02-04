@@ -1,5 +1,9 @@
-var settings = require('../settings'),
-    Db = require('mongodb').Db,
-    Connection = require('mongodb'),Connection,
-    Server =require('mongodb').Server;
-module.exports = new Db(settings.db, new Server(settings.host, settings.port),{safe:true});
+var mongoose = require('mongoose');
+var TaskSchema = new mongoose.Schema({
+    author: String,
+    title: String,
+    description: String,
+    published_date: String,
+    updated_date: { type: Date, default: Date.now },
+  });
+  module.exports = mongoose.model('Task', TaskSchema);
