@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-todo-list',
@@ -7,14 +8,13 @@ import { Http } from '@angular/http';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-  listData: Array<string>;
-  constructor(private http:Http) {
-    //json data is from test api.
-    this.http.get('https://jsonplaceholder.typicode.com/todos')
-    .subscribe(res => this.listData = res.json());
-   }
-   
+  listData: any;
+  constructor(private http: HttpClient ) {
+    // json data is from test api.
+  }
   ngOnInit() {
+    this.http.get('https://jsonplaceholder.typicode.com/todos')
+    .subscribe(data => {this.listData = data; });
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-todo-form',
@@ -9,17 +9,15 @@ import { Http } from '@angular/http';
 
 export class TodoFormComponent implements OnInit {
   titleValue: string;
-  constructor(private http:Http ) { 
+  constructor(private http: HttpClient ) {
   }
 
   ngOnInit() {
   }
-  postTask(){
+  postTask() {
     console.log(this.titleValue);
     const req = this.http.post('http://jsonplaceholder.typicode.com/posts', {
-     
-      
-    title : this.titleValue,          
+    title : this.titleValue,
     body: 'bar',
     userId: 1
   })
@@ -28,7 +26,7 @@ export class TodoFormComponent implements OnInit {
         console.log(res);
       },
       err => {
-        console.log("Error occured");
+        console.log('Error occured');
       }
     ); }
 
