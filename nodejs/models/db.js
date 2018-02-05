@@ -4,8 +4,8 @@ var TaskSchema = new mongoose.Schema({
     userId: Number,
     title: String,
     description: String,
-    copmleted: Boolean,    
-    published_date: String,
-    updated_date: { type: Date, default: Date.now },
+    copmleted: Boolean,
+    created_at: Date,    
+    updated_at: { type: Date, default: Date.now },
   });
   module.exports = mongoose.model('Task', TaskSchema);
