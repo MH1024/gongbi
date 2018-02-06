@@ -9,6 +9,8 @@ import { HttpClient } from '@angular/common/http';
 
 export class TodoFormComponent implements OnInit {
   titleValue: string;
+  description: string;
+  completed: boolean;
   constructor(private http: HttpClient ) {
   }
 
@@ -16,10 +18,12 @@ export class TodoFormComponent implements OnInit {
   }
   postTask() {
     console.log(this.titleValue);
-    const req = this.http.post('http://jsonplaceholder.typicode.com/posts', {
+    const req = this.http.post('/task', {
+    userId : 1,
     title : this.titleValue,
-    body: 'bar',
-    userId: 1
+    description : this.description,
+    completed : this.completed,
+    created_at : new Date(),
   })
     .subscribe(
       res => {
