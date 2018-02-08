@@ -15,8 +15,8 @@ MEAN stack for todo list web app.
 ## API Design
 
 1. Get Tasks
-    1. main page：`GET /posts`
-    2. check task details：`GET /posts/:postId`
-2. Create ：`POST /posts/create`
-3. Edit Tasks ：`POST /posts/:postId/edit`
-4. Delete Task：`DELETE /posts/:postId/remove`
+    1. main page：`GET /`
+    2. check task details：`GET /task/:Id`
+2. Create ：`POST /task/create`
+3. Edit Tasks ：`POST /task/:Id/edit`
+4. Delete Task：`DELETE /task/:Id/remove`
