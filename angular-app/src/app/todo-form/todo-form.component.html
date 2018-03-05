@@ -3,11 +3,11 @@
   
     <form class="form-container" >
         <mat-form-field>
-          <input matInput [(ngModel)]="titleValue" placeholder="Title" [ngModelOptions]="{standalone: true}">
+          <input matInput [(ngModel)]="todo.titleValue" placeholder="Title">
         </mat-form-field>
 
         <mat-form-field>
-          <input matInput [(ngModel)]="description" placeholder="Content">
+          <input matInput [(ngModel)]="todo.description" placeholder="Content">
         </mat-form-field>
 
         <div>Completed: 

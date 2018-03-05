@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import {Todo} from '../todo';
 
 @Component({
   selector: 'app-todo-form',
@@ -8,16 +9,15 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class TodoFormComponent implements OnInit {
-  titleValue: string;
-  description: string;
-  completed: boolean;
+  @Input() todo: Todo;
+  
   constructor(private http: HttpClient ) {
   }
 
   ngOnInit() {
   }
   postTask() {
-    console.log(this.titleValue);
+    console.log(todo.titleValue);
     const req = this.http.post('/task', {
     userId : 1,
     title : this.titleValue,
